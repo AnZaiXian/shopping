@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by lenovo on 2017/8/22.
  */
 @Controller
+@RequestMapping("wrx")
 public class GoodsLittleController {
 
 
@@ -21,10 +22,10 @@ public class GoodsLittleController {
     @RequestMapping("addgoodsLittleSort")
     public String addgoodsLittleSort(){
         GoodsLittleSort goodsLittleSort = new GoodsLittleSort();
-        goodsLittleSort.setGlsCategory("kkk");
-        goodsLittleSort.setGbsId(2);
+        goodsLittleSort.setGlsCategory("9999999");
+        goodsLittleSort.setGbsId(6);
         goodsLittleSortService.addGoodsLittleSort(goodsLittleSort);
-        return "person/address";
+        return "home/home";
     }
 
 
